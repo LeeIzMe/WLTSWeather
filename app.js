@@ -80,3 +80,7 @@ function displayWeather(forecast) {
 
 
 document.addEventListener('DOMContentLoaded', fetchWeather);
+
+setInterval(function() {
+    location.reload(); // Reload the page every 5 minutes
+}, 300000); // 5 minutes = 600,000ms
